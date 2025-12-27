@@ -4,6 +4,7 @@ package com.isekai.hoyourpg.character.domain;
 import com.isekai.hoyourpg.common.domain.vo.Exp;
 import com.isekai.hoyourpg.common.domain.vo.Level;
 import com.isekai.hoyourpg.common.domain.vo.Name;
+import com.isekai.hoyourpg.common.domain.Job.JobId;
 
 import java.util.Objects;
 
@@ -11,12 +12,14 @@ public class Character {
     private Name name;
     private Level level;
     private Exp exp;
+    private JobId jobId;
 
     public Character(CharacterId id, Name name) {
         this.id = Objects.requireNonNull(id);
         this.name = Objects.requireNonNull(name);
         this.level = new Level(1);
         this.exp = new Exp(0);
+        this.jopId = null //Todo: 무직을 넣어두어야함
     }
 
     
