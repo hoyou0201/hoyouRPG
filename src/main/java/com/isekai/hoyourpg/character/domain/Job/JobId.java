@@ -3,6 +3,12 @@ package com.isekai.hoyourpg.character.domain.job;
 import java.util.Objects;
 import java.util.UUID;
 
+
+/**
+ * 직업을 구분해주는 vo
+ * 
+ * UUID를 기반으로 생성
+ */
 public final class JobId {
     private final UUID value;
 
@@ -10,9 +16,7 @@ public final class JobId {
         this.value = Objects.requireNonNull(value);
     }
 
-    public static JobId newId() {
-        return new JobId(UUID.randomUUID());
-    }
+
 
     public static JobId of(UUID value) {
         return new JobId(value);
@@ -33,6 +37,6 @@ public final class JobId {
         if (!(o instanceof JobId that)) return false;
         return Objects.equals(value, that.value);
     }
-    
+
     @Override public int hashCode() { return Objects.hash(value); }
 }
