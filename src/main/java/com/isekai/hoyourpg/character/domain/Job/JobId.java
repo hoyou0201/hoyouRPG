@@ -16,8 +16,6 @@ public final class JobId {
         this.value = Objects.requireNonNull(value);
     }
 
-
-
     public static JobId of(UUID value) {
         return new JobId(value);
     }
