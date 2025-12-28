@@ -27,13 +27,13 @@ public class JsonJobCatalog implements JobCatalog {
                 "jobs/warrior.json"
         );
         for(String path : files){
-            Job job = loadOne(mapper);
+            Job job = loadOne(mapper, path);
             byId.put(job.id(), job);
             byCode.put(job.code(), job);
         }
     }
 
-    private Job loadOne(ObjectMapper mapper){
+    private Job loadOne(ObjectMapper mapper, String path){
         try(InputStream is = getClass().getClassLoader().getResourceAsStream(path)) {
             if(is == null){
                 throw new IllegalStateException("Job json not found: " + path);
