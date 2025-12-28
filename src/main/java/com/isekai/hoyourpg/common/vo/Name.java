@@ -11,6 +11,6 @@ public record Name(String value) {
         if (value == null || value.isBlank()) {
             throw new DomainException(ErrorCode.INVALID_NAME, "이름은 비어 있을 수 없습니다.");
         }
-        this.value = value.trim(); //공백 제거
+        value = value.trim(); //공백 제거
     }
 }
