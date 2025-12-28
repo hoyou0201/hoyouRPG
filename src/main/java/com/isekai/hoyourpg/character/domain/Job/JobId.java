@@ -11,7 +11,7 @@ import java.util.UUID;
  */
 public record JobId(UUID id) {
     public JobId {
-        Object.requireNonNull(id);
+        Objects.requireNonNull(id);
     }
 
     public static JobId of(UUID id) {

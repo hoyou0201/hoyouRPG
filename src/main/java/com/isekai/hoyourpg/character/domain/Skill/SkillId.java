@@ -6,7 +6,7 @@ import java.util.UUID;
 
 public record SkillId(UUID id) {
     public SkillId {
-        Object.requireNonNull(id);
+        Objects.requireNonNull(id);
     }
 
     public static SkillId of(UUID id) {

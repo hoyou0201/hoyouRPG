@@ -6,7 +6,7 @@ import java.util.UUID;
 
 public record CharacterId(UUID id) {
     public CharacterId {
-        Object.requireNonNull(id);
+        Objects.requireNonNull(id);
     }
 
     public static CharacterId of(UUID id) {
