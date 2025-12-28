@@ -8,7 +8,7 @@ public record JobCode(String code) {
         if (code == null || code.isBlank()) {
             throw new DomainException(ErrorCode.INVALID_CODE, "코드는 비어 있을 수 없습니다.");
         }
-        this.code = code.trim(); //공백 제거
+        code = code.trim(); //공백 제거
     }
 
     public static JobCode from(String code) {
