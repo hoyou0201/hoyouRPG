@@ -6,4 +6,5 @@ public enum ErrorCode {
     HP_NEGATIVE,
     INVALID_NAME,
     Mp_NEGATIVE,
+    INVALID_CODE,
 }
