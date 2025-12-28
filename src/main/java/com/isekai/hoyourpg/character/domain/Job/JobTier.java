@@ -15,7 +15,7 @@ public record JobTier(int tier) {
 
     }
 
-    public static JobTier of(int tier) {
+    public static JobTier from(int tier) {
         return new JobTier(tier);
     }
 
