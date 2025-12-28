@@ -6,7 +6,7 @@ import java.util.Set;
 public record Job(
     JobId id,
     String name,
-    String code,
+    JobCode code,
     JobTier tier,
     Set<JobId> nextJobs,
     Set<SkillId> learnablePassives,
