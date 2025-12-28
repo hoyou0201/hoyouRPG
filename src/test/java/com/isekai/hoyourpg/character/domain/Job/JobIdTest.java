@@ -29,10 +29,10 @@ class JobIdTest {
     }
 
     @Test
-    @DisplayName("toString은 UUID 문자열을 그대로 반환한다")
-    void toString은_UUID문자열() {
+    @DisplayName("id는_UUID를_그대로_보관한다")
+    void id는_UUID를_그대로_보관한다() {
         UUID u = UUID.randomUUID();
-
-        assertThat(JobId.of(u).toString()).isEqualTo(u.toString());
+        assertThat(JobId.of(u).id()).isEqualTo(u);
     }
+
 }
