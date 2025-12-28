@@ -8,7 +8,7 @@ public final class Mp {
 
     public Mp(int value) {
         if (value < 0) {
-            throw new DomainException(ErrorCode.Mp_NEGATIVE, "체력는 음수일 수 없습니다.");
+            throw new DomainException(ErrorCode.MP_NEGATIVE, "체력는 음수일 수 없습니다.");
         }
         this.value = value;
     }

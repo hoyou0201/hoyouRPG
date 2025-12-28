@@ -2,6 +2,7 @@ package com.isekai.hoyourpg.character.infra.job;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.isekai.hoyourpg.character.domain.Job.*;
+import com.isekai.hoyourpg.character.domain.Skill.SkillId;
 
 import java.io.InputStream;
 import java.io.IOException;
@@ -63,7 +64,7 @@ public class JsonJobCatalog implements JobCatalog {
                 .collect(Collectors.toUnmodifiableSet());
     }
 
-    private Set<JobId> toSkillIdSet(List<String> ids){
+    private Set<SkillId> toSkillIdSet(List<String> ids){
         if(ids == null) return Set.of(); //비어있으면 빈 배열 뱉기
         return ids.stream()
                 .map(UUID::fromString)
