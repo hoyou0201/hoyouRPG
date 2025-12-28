@@ -4,7 +4,7 @@ package com.isekai.hoyourpg.character.domain;
 import com.isekai.hoyourpg.common.domain.vo.Exp;
 import com.isekai.hoyourpg.common.domain.vo.Level;
 import com.isekai.hoyourpg.common.domain.vo.Name;
-import com.isekai.hoyourpg.common.domain.Job.JobId;
+import com.isekai.hoyourpg.character.domain.Job.JobId;
 
 import java.util.Objects;
 
