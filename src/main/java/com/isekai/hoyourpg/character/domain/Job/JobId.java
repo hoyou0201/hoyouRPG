@@ -20,7 +20,7 @@ public final class JobId {
         return new JobId(value);
     }
 
-    public UUID value() {
+    public UUID id() {
         return value;
     }
 
