@@ -20,7 +20,7 @@ public class Character {
         this.name = Objects.requireNonNull(name);
         this.level = new Level(1);
         this.exp = new Exp(0);
-        this.jopId = jobId;
+        this.jobId = jobId;
     }
 
     
