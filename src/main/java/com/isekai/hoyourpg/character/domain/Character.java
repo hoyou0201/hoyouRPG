@@ -14,12 +14,12 @@ public class Character {
     private Exp exp;
     private JobId jobId;
 
-    public Character(CharacterId id, Name name) {
+    public Character(CharacterId id, Name name, JobId jobId) {
         this.id = Objects.requireNonNull(id);
         this.name = Objects.requireNonNull(name);
         this.level = new Level(1);
         this.exp = new Exp(0);
-        this.jopId = null //Todo: 무직을 넣어두어야함
+        this.jopId = jobId;
     }
 
     
