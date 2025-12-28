@@ -2,6 +2,7 @@ package com.isekai.hoyourpg.character.domain.Job;
 
 import java.util.Objects;
 import java.util.Set;
+import com.isekai.hoyourpg.character.domain.Skill.SkillId;
 
 public record Job(
     JobId id,
