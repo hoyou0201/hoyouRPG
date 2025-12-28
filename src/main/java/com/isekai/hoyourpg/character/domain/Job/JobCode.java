@@ -10,4 +10,8 @@ public record JobCode(String code) {
         }
         this.code = code.trim(); //공백 제거
     }
+
+    public static JobCode from(String code) {
+        return new JobCode(code);
+    }
 }
