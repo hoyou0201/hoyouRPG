@@ -1,6 +1,7 @@
 package com.isekai.hoyourpg.character.domain.Job;
 
 import com.isekai.hoyourpg.common.domain.error.ErrorCode;
+import com.isekai.hoyourpg.common.domain.error.DomainException;
 
 
 /**
