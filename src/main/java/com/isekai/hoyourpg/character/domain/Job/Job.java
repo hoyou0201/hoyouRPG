@@ -1,4 +1,4 @@
-package com.isekai.hoyourpg.character.domain.job;
+package com.isekai.hoyourpg.character.domain.Job;
 
 import java.util.Objects;
 import java.util.Set;

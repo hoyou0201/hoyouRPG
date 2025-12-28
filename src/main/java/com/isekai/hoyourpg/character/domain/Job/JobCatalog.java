@@ -1,4 +1,4 @@
-package com.isekai.hoyourpg.character.domain.job;
+package com.isekai.hoyourpg.character.domain.Job;
 
 public interface JobCatalog {
     Job findById(JobId id);
