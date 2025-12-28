@@ -1,4 +1,4 @@
-package com.isekai.hoyourpg.character.domain.job;
+package com.isekai.hoyourpg.character.domain.Job;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
