@@ -13,6 +13,7 @@ public class Character {
     private Level level;
     private Exp exp;
     private JobId jobId;
+    private CharacterId id;
 
     public Character(CharacterId id, Name name, JobId jobId) {
         this.id = Objects.requireNonNull(id);
