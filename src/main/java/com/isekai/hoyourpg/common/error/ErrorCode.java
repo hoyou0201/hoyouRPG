@@ -7,4 +7,5 @@ public enum ErrorCode {
     INVALID_NAME,
     Mp_NEGATIVE,
     INVALID_CODE,
+    INVALID_TIER,
 }
