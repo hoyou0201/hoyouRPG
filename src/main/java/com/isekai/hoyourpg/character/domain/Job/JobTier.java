@@ -1,6 +1,6 @@
 package com.isekai.hoyourpg.character.domain.Job;
 
-import java.util.Objects;
+import com.isekai.hoyourpg.common.domain.error.ErrorCode;
 
 
 /**
