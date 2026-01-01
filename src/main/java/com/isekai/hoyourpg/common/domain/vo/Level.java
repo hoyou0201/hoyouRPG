@@ -5,7 +5,7 @@ import com.isekai.hoyourpg.common.domain.error.ErrorCode;
 
 public record Level(int value) {
 
-    public Level(int value){
+    public Level{
         if (value < 1) {
             throw new DomainException(ErrorCode.LEVEL_OUT_OF_RANGE, "레벨은 1 이상이어야 합니다.");
         }

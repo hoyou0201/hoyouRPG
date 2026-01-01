@@ -4,7 +4,7 @@ import com.isekai.hoyourpg.common.domain.error.DomainException;
 import com.isekai.hoyourpg.common.domain.error.ErrorCode;
 
 public record Hp(int value) {
-    public Hp(int value) {
+    public Hp {
         if (value < 0) {
             throw new DomainException(ErrorCode.HP_NEGATIVE, "체력는 음수일 수 없습니다.");
         }
