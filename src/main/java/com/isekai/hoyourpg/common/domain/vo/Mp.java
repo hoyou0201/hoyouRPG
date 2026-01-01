@@ -3,18 +3,12 @@ package com.isekai.hoyourpg.common.domain.vo;
 import com.isekai.hoyourpg.common.domain.error.DomainException;
 import com.isekai.hoyourpg.common.domain.error.ErrorCode;
 
-public final class Mp {
-    private final int value;
+public record Mp(int value) {
 
-    public Mp(int value) {
+    public Mp {
         if (value < 0) {
             throw new DomainException(ErrorCode.MP_NEGATIVE, "체력는 음수일 수 없습니다.");
         }
-        this.value = value;
-    }
-
-    public int value() {
-        return value;
     }
 
     public Mp add(Mp other) {
