@@ -21,8 +21,8 @@ public final class Hp {
         return new Hp(this.value + other.value);
     }
 
-    public Hp subtract(int amount) {
-        int next = this.value - amount;
+    public Hp subtract(Hp other) {
+        int next = this.value - other.value;
         return new Hp(Math.max(next, 0)); //int 최소값 0
     }
 }
