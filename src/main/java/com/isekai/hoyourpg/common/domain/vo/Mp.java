@@ -22,7 +22,7 @@ public final class Mp {
     }
 
     public Mp subtract(Mp other) {
-        int next = this.value - other;
+        int next = this.value - other.value;
         return new Mp(Math.max(next, 0)); //int 최소값 0
     }
 }
