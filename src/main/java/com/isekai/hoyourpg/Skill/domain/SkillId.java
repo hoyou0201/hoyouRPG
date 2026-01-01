@@ -1,4 +1,4 @@
-package com.isekai.hoyourpg.character.domain.Skill;
+package com.isekai.hoyourpg.Skill.domain;
 
 import java.util.Objects;
 import java.util.UUID;

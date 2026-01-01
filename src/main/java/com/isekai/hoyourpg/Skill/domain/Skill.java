@@ -1,8 +1,8 @@
-package com.isekai.hoyourpg.character.domain.Skill;
+package com.isekai.hoyourpg.Skill.domain;
 
 import java.util.Set;
 
-import com.isekai.hoyourpg.character.domain.Effect.Effect;
+import com.isekai.hoyourpg.Effect.domain.Effect;
 
 public record Skill(
     SkillId id,

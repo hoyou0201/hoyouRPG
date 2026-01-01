@@ -1,4 +1,4 @@
-package com.isekai.hoyourpg.character.domain.Skill;
+package com.isekai.hoyourpg.Skill.domain;
 
 import com.isekai.hoyourpg.common.domain.error.DomainException;
 import com.isekai.hoyourpg.common.domain.error.ErrorCode;

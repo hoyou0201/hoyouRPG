@@ -1,8 +1,8 @@
-package com.isekai.hoyourpg.character.infra.job;
+package com.isekai.hoyourpg.Job.infra;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.isekai.hoyourpg.character.domain.Job.*;
-import com.isekai.hoyourpg.character.domain.Skill.SkillId;
+import com.isekai.hoyourpg.Job.domain.*;
+import com.isekai.hoyourpg.Skill.domain.SkillId;
 
 import java.io.InputStream;
 import java.io.IOException;

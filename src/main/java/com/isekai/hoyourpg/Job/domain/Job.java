@@ -1,8 +1,8 @@
-package com.isekai.hoyourpg.character.domain.Job;
+package com.isekai.hoyourpg.Job.domain;
 
 import java.util.Objects;
 import java.util.Set;
-import com.isekai.hoyourpg.character.domain.Skill.SkillId;
+import com.isekai.hoyourpg.Skill.domain.SkillId;
 
 public record Job(
     JobId id,

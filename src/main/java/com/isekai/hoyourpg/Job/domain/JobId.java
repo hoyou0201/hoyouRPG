@@ -1,4 +1,4 @@
-package com.isekai.hoyourpg.character.domain.Job;
+package com.isekai.hoyourpg.Job.domain;
 
 import java.util.Objects;
 import java.util.UUID;

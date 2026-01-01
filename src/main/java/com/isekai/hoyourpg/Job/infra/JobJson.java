@@ -1,4 +1,4 @@
-package com.isekai.hoyourpg.character.infra.job;
+package com.isekai.hoyourpg.Job.infra;
 
 import java.util.List;
 

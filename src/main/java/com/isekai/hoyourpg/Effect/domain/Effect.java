@@ -1,4 +1,4 @@
-package com.isekai.hoyourpg.character.domain.Effect;
+package com.isekai.hoyourpg.Effect.domain;
 
 import com.isekai.hoyourpg.battle.domain.BattleContext;
 
