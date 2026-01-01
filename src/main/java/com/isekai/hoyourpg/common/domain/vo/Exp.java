@@ -3,18 +3,11 @@ package com.isekai.hoyourpg.common.domain.vo;
 import com.isekai.hoyourpg.common.domain.error.DomainException;
 import com.isekai.hoyourpg.common.domain.error.ErrorCode;
 
-public final class Exp {
-    private final long value;
-
-    public Exp(long value) {
+public record Exp(long value) {
+    public Exp {
         if (value < 0) {
             throw new DomainException(ErrorCode.EXP_NEGATIVE, "경험치는 음수일 수 없습니다.");
         }
-        this.value = value;
-    }
-
-    public long value() {
-        return value;
     }
 
     public Exp add(Exp other) {
