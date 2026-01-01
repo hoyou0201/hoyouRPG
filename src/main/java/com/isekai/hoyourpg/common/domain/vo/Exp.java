@@ -21,8 +21,8 @@ public final class Exp {
         return new Exp(this.value + other.value);
     }
 
-    public Exp subtract(long amount) {
-        long next = this.value - amount;
+    public Exp subtract(Exp other) {
+        long next = this.value - other.value;
         return new Exp(Math.max(next, 0)); //exp 최소값 0
     }
 }
