@@ -8,7 +8,7 @@ public class EffectFactory{
         return switch(spec){
             case DealDamegeSpec s -> 
                 new DealDamege(s.amount());
-        }
+        };
     }
 
 
