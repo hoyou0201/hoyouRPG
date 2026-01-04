@@ -13,4 +13,4 @@ import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
 @JsonSubTypes({
     @Type(value = DealDamegeSpec.class, name = "dealDamage")
 })
-public interface EffectSpec {}
+public sealed interface EffectSpec permits DealDamegeSpec{}
