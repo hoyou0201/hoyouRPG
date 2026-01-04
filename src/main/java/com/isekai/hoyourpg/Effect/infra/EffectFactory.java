@@ -4,7 +4,7 @@ import com.isekai.hoyourpg.Effect.domain.Effect;
 
 public class EffectFactory{
     
-    Effect toEffect(EffectSpec spec){
+    public Effect toEffect(EffectSpec spec){
         return switch(spec){
             case DealDamegeSpec s -> 
                 new DealDamege(s.amount());
