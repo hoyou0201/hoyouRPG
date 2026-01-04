@@ -9,4 +9,4 @@ public record SkillSpec(
     String name;
     String code;
     List<EffectSpec> effectspecs;
-)
+) {}
