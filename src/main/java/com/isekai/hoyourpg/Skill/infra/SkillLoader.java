@@ -22,30 +22,24 @@ public class SkillLoader{
         this.factory = factory;
     }
 
-    public Skill load(String path){
-        try(InputStream is = getClass().getClassLoader().getResourceAsStream(path)) {
-            if(is == null){
-                throw new IllegalStateException("Skill json not found: " + path);
-            }
-
+    public Skill load(InputStream is){
+        try{
             SkillSpec spec = mapper.readValue(is, SkillSpec.class);
 
-            List<Effect> effects = spec.effectspecs.stream()
+            List<Effect> effects = spec.effectspecs().stream()
                                     .map(factory::toEffect)
                                     .toList();
             
             
             return new Skill(
-                    SkillId.of(UUID.fromString(spec.id)),
-                    spec.name,
-                    SkillCode.from(spec.code),
+                    SkillId.of(UUID.fromString(spec.id())),
+                    spec.name(),
+                    SkillCode.from(spec.code()),
                     effects
             );
-
         } catch (IOException e) {
-            throw new IllegalStateException("Failed to load skill json: " + path, e);
+            throw new IllegalStateException("Failed to load skill json", e);
         }
-
     }
 
 }

@@ -1,13 +1,13 @@
 package com.isekai.hoyourpg.Effect.infra;
 
-import com.isekai.hoyourpg.Effect.domain.Effect;
+import com.isekai.hoyourpg.Effect.domain.*;
 
 public class EffectFactory{
     
     public Effect toEffect(EffectSpec spec){
         return switch(spec){
             case DealDamegeSpec s -> 
-                new DealDamege(s.amount());
+                new DealDamage(s.amount());
         };
     }
 
