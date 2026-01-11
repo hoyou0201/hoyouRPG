@@ -23,9 +23,9 @@ class EffectSpecTest {
 
         EffectSpec spec = mapper.readValue(json, EffectSpec.class);
 
-        assertThat(spec).isInstanceOf(DealDamegeSpec.class);
+        assertThat(spec).isInstanceOf(DealDamageSpec.class);
 
-        DealDamegeSpec damageSpec = (DealDamegeSpec) spec;
+        DealDamageSpec damageSpec = (DealDamageSpec) spec;
         assertThat(damageSpec.amount()).isEqualTo(10);
     }
 

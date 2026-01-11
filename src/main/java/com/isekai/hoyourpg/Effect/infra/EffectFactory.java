@@ -6,7 +6,7 @@ public class EffectFactory{
     
     public Effect toEffect(EffectSpec spec){
         return switch(spec){
-            case DealDamegeSpec s -> 
+            case DealDamageSpec s -> 
                 new DealDamage(s.amount());
         };
     }
