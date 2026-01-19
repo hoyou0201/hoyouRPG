@@ -13,5 +13,9 @@ public class DealDamage implements Effect{
     public void apply(BattleContext ctx){
 
     }
+
+    public int amount(){
+        return amount;
+    }
     
 }
