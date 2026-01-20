@@ -29,14 +29,14 @@ public class SceneLoader{
     public Skill load(InputStream is){
         try{
             SceneSpec spec = mapper.readValue(is, SceneSpec.class);
-            List<ChoiceId> choiceIds = spec.choiceids().stream()
-                                        .map(ChoiceId::of)
+            List<Choice> choices = spec.choiceids().stream()
+                                        .map(factory::toChoice)
                                         .toList();
             
             return new Scene(
                     SceneId.of(UUID.fromString(spec.id())),
                     spec.description(),
-                    choiceIds
+                    choices
             );
         } catch (IOException e) {
             throw new IllegalStateException("Failed to load skill json", e);
