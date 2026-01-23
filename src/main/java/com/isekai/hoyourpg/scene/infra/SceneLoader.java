@@ -18,9 +18,8 @@ import java.util.stream.Collectors;
 public class SceneLoader{
     private final ObjectMapper mapper;
 
-    public SceneLoader(ObjectMapper mapper, EffectFactory factory){
+    public SceneLoader(ObjectMapper mapper){
         this.mapper = mapper;
-        this.factory = factory;
     }
 
     /**
