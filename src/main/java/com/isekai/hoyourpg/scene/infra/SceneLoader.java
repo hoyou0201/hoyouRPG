@@ -17,9 +17,11 @@ import java.util.stream.Collectors;
  */
 public class SceneLoader{
     private final ObjectMapper mapper;
+    private final ChoiceFactory factory;
 
-    public SceneLoader(ObjectMapper mapper){
+    public SceneLoader(ObjectMapper mapper, ChoiceFactory factory){
         this.mapper = mapper;
+        this.factory = factory;
     }
 
     /**
