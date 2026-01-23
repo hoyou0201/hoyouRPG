@@ -1,4 +1,4 @@
-package com.isekai.hoyourpg.Scene.infra;
+package com.isekai.hoyourpg.scene.infra;
 
 import java.util.List;
 
