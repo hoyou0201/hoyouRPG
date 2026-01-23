@@ -16,7 +16,7 @@ public class ChoiceFactory{
         Objects.requireNonNull(spec, "spec");
         return new Choice(ChoiceId.of(UUID.fromString(spec.id())),
                         spec.description(),
-                        SceneId.of(UUID.fromString(spec.id())));
+                        SceneId.of(UUID.fromString(spec.nextSceneId())));
     }
 
 }

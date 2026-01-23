@@ -30,7 +30,7 @@ public class SceneLoader{
     public Scene load(InputStream is){
         try{
             SceneSpec spec = mapper.readValue(is, SceneSpec.class);
-            List<Choice> choices = spec.choiceids().stream()
+            List<Choice> choices = spec.choices().stream()
                                         .map(factory::toChoice)
                                         .toList();
             
