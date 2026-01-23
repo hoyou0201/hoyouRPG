@@ -7,8 +7,7 @@ import java.util.UUID;
 public record Choice(
     ChoiceId id,
     String description,
-    SceneId nextSceneId,
-    //reward 추가 필요
+    SceneId nextSceneId //reward 추가 필요
 ) {
     
 

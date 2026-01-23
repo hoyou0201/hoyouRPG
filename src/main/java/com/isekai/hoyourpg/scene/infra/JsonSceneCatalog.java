@@ -17,10 +17,10 @@ public class JsonSceneCatalog implements SceneCatalog{
         ClassLoader cl = getClass().getClassLoader();
 
         try (InputStream indexIn = cl.getResourceAsStream("scenes/index.json")) {
-            SceneIndex index = mapper.readValue(indexIn, SceneIndex.class);
             if (indexIn == null) {
                 throw new IllegalStateException("Scene index json not found: scenes/index.json");
             }
+            SceneIndex index = mapper.readValue(indexIn, SceneIndex.class);
             for (String file : index.files()) {
                 try (InputStream in = cl.getResourceAsStream("scenes/" + file)) {
                     if(in == null){
