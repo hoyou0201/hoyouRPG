@@ -5,8 +5,8 @@ import java.util.Set;
 
 public record Scene(
     SceneId id,
-    String description;
-    Set<Choice> choices;
+    String description,
+    Set<Choice> choices
 ) {
 
 }
